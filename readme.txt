@@ -1,1 +1,1 @@
-Repo set up for work for udacity CS 253 class. 
+Repo for work for Udacity CS253 class.
