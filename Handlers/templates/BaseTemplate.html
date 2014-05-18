@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS253 Wiki</title>
+		<!-- <link rel="stylesheet" href="/css/wiki.css" type="text/css"> -->
+	</head>
+<body>
+	<div class="nav"><a href="/_edit/{{current_page}}">edit</a> | <a href="/_history/{{current_page}}">history</a> | {{current_user}} (<a href="/login/{{current_page}}">login</a>/<a href="/logout/{{current_page}}">out</a>)</div>
+	<div class="content">{% block content %}{% endblock %}</div>
+</body>
+</html>

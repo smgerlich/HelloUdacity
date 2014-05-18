@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>smgHelloUdacity Blog</title>
+	</head>
+<body>
+
+	<h1> Welcome to the <a href="/blog">blog</a></h1>
+	<p>You can submit a new blog entry <a href="/blog/newpost">here</a>, or view your previous entries below.</p>
+	<br>
+	<hr>
+	
+	<div>
+		<h3>{{post.subject}}</h3>
+		<span>{{post.created.strftime("%d %B, %Y")}}</span> 
+	</div>
+	<div>
+		<p>{{post.content | safe}}</p>
+	</div>
+	<br><hr><br>
+	<p>Queried {{time}} seconds ago</p>
+
+</body>
+</html>

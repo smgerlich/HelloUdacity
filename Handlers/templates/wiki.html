@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% extends "BaseTemplate.html" %}
+{% block content %}
+
+<div class="wiki">
+
+
+<hr>
+{{content|safe}}
+<hr>
+Last edited on: {{date.strftime("%c")}}
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+{% extends "BaseTemplate.html" %}
+{% block content %}
+
+	<div class="edit">
+	
+	<h1>Wiki editor</h1>
+			<form method="post">
+			<br>
+			<textarea name="content" cols="60" rows="20" placeholder="Enter HTML to create a page.">{{content}}</textarea>
+			<br>{{error}}
+			<input type="submit">
+			</form>
+	
+	</div>
+
+{% endblock %}

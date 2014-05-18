@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+{% extends "BaseTemplate.html" %}
+{% block content %}
+
+{% for edit in edits %}
+
+	<div class="history">
+		<br><hr><div class="head">{{edit.date.strftime("%c")}}||{{edit.user}}||{{edit.content}}||<a href="/{{edit.url}}/{{edit.key().id()}}">view</a> or <a href="/_edit/{{edit.url}}/{{edit.key().id()}}">edit</a>
+	</div>
+
+{% endfor %}
+{% endblock %}

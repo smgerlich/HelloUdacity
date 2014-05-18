@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS253 Wiki</title>
+		<!-- <link rel="stylesheet" href="/css/wiki.css" type="text/css"> -->
+	</head>
+<body>
+	<div class="nav"> {{current_user}} (<a href="/login">login</a>/<a href="/logout">out</a>)</div>
+	<div class="content">
+	<div class="wiki">
+
+The most recent wiki edit was:
+<br><hr>
+<h1><a href="/{{url}}">{{title}}</a></h1>
+{{content|safe}}
+<br><br><hr>
+Last edited on: {{date.strftime("%c")}}, br: {{user}}
+</div>
+	
+	</div>
+</body>
+</html>

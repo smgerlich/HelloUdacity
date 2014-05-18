@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>smgHelloUdacity Login</title>
+	</head>
+<body>
+	<h1>Login Form</h1>
+	<p>Please enter your username and password below:</p>
+	<form method="post">
+		<label>Username:<input type="text" name="username" value="{{username}}"></label><br>
+		<label>Password:<input type="password" name="password" value="{{password}}"></label><br>
+		<br><span>{{error}}</span><br>
+		<input type="submit">
+	</form>
+	<p> If you do not yet have an account, you can sign up <a href='/signup/{{page}}'>here</a>.
+</body>
+</html>
